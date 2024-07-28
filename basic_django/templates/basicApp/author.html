@@ -1,0 +1,25 @@
+{% extends 'basicApp/layout.html' %}
+
+{% block content_block %}
+
+<ul>
+    <li>{{author.AuthorName}}</li>
+    <li>{{author.Country}}</li>
+    <li>{{author.BookName}}</li>
+</ul>
+
+<table class="table"> 
+    <thead>
+        <td>Author Name</td>
+        <td>Country</td>
+        <td>Book Name</td>
+    </thead>
+    {% for author in authors %}
+        <tr>
+            <td>{{author.AuthorName}}</td>
+            <td>{{author.Country}}</td>
+            <td>{{author.BookName}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

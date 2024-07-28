@@ -1,0 +1,20 @@
+2024-06-26 21:05:24,166-views.py-DEBUG-10-55-Debug: I just entered into the View..2024-06-26 21:05:24.166819
+2024-06-26 21:05:24,166-views.py-INFO-20-56-Info: Confirmation that things are working as expected.
+2024-06-26 21:05:24,171-views.py-WARNING-30-57-Warning: An indication that something unexpected happened
+2024-06-26 21:05:24,171-views.py-ERROR-40-58-Error: Due to a more serious problem, the software has not been able to perfected
+2024-06-26 21:05:24,171-views.py-CRITICAL-50-59-Critical: A serious error, indicating that the program itself may be unable to work
+2024-07-01 19:14:17,104-views.py-DEBUG-10-68-Debug: I just entered into the View..2024-07-01 19:14:17.104329
+2024-07-01 19:14:17,108-views.py-INFO-20-69-Info: Confirmation that things are working as expected.
+2024-07-01 19:14:17,108-views.py-WARNING-30-70-Warning: An indication that something unexpected happened
+2024-07-01 19:14:17,108-views.py-ERROR-40-71-Error: Due to a more serious problem, the software has not been able to perfected
+2024-07-01 19:14:17,112-views.py-CRITICAL-50-72-Critical: A serious error, indicating that the program itself may be unable to work
+2024-07-01 19:20:57,800-views.py-DEBUG-10-68-Debug: I just entered into the View..2024-07-01 19:20:57.800425
+2024-07-01 19:20:57,800-views.py-INFO-20-69-Info: Confirmation that things are working as expected.
+2024-07-01 19:20:57,800-views.py-WARNING-30-70-Warning: An indication that something unexpected happened
+2024-07-01 19:20:57,805-views.py-ERROR-40-71-Error: Due to a more serious problem, the software has not been able to perfected
+2024-07-01 19:20:57,805-views.py-CRITICAL-50-72-Critical: A serious error, indicating that the program itself may be unable to work
+2024-07-09 17:42:51,914-views.py-DEBUG-10-72-Debug: I just entered into the View..2024-07-09 17:42:51.914385
+2024-07-09 17:42:51,954-views.py-INFO-20-73-Info: Confirmation that things are working as expected.
+2024-07-09 17:42:51,954-views.py-WARNING-30-74-Warning: An indication that something unexpected happened
+2024-07-09 17:42:51,954-views.py-ERROR-40-75-Error: Due to a more serious problem, the software has not been able to perfected
+2024-07-09 17:42:51,954-views.py-CRITICAL-50-76-Critical: A serious error, indicating that the program itself may be unable to work

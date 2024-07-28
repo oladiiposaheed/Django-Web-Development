@@ -1,0 +1,85 @@
+{% extends 'basicApp/layout.html' %}
+
+{% block content_block %}
+
+<div class="container-fluid">
+    <div class="row">
+        <h2>User Details</h2>
+
+        <div class="col-6">
+            <div class="card w-75 p-2">
+                <div class="card-header" style="height: 300px;">
+                    <p><b>User Name: {{user.id}}</b></p>
+                    <img src="{{image}}" class="card-img-top" height="200" alt="">
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Email</dt>
+                        <dd>{{user.email}}</dd>
+                        <dt>First Name</dt>
+                        <dd>{{user.name.firstname}}</dd>
+                        <dt>Last Name</dt>
+                        <dd>{{user.name.lastname}}</dd>
+                        <dt>Phone</dt>
+                        <dd>{{user.phone}}</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <form action="{% url 'userdetails' %}">
+                        {% csrf_token %}
+
+                        <input type="hidden" name="useridcounter" value="{{user.id}}" id="">
+
+                      <button value="Next" type="submit" name="btnNext" class="btn btn-danger btn-sm">
+                        <span class="bi bi-chevron-right">Next User</span>
+                      </button>
+                      
+                      <button value="Previous" type="submit" name="btnPrevious" class="btn btn-danger me-2">
+                        <span class="bi bi-chevron-left">Previous User</span>
+                      </button>
+
+                      <br>
+                      <input type="checkbox" class="form-check-input" id="chkshowid" onclick="toggleAll()" />
+                      <label for="chkshowid" id="lblshowhide">Show Address Details</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <h2>Address Details</h2>
+            <div class="card w-50 p-2" id="AddressDetails-{{user.id}}" style="display: none;">
+                <div class="card-header" style="height: 100px;">
+                    <p><b>City: {{user.address.city}}</b></p>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Street</dt>
+                        <dd>{{user.address.street}}</dd>
+                        <dt>Street Number</dt>
+                        <dd>{{user.address.number}}</dd>
+                        <dt>Zip Code</dt>
+                        <dd>{{user.address.zipcode}}</dd>
+                        <dt>Geo Location Latitude</dt>
+                        <dd>{{user.address.geolocation.lat}}</dd>
+                        <dt>Geo Location Longitude</dt>
+                        <dd>{{user.address.geolocation.long}}</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAll(){
+        $('div[id*="AddressDetails-"]').toggle();
+
+        if($("#lblshowhide").text() == 'Hide Address Details')
+            $('#lblshowhide').text('Show Address Details')
+        else
+            $('#lblshowhide').text('Hide Address Details')
+    }
+</script>
+
+{% endblock %}

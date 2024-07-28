@@ -1,0 +1,73 @@
+[
+    {
+        "model": "payrollApp.Country",
+        "pk": 1,
+        "fields": {
+            "country": "India"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 2,
+        "fields": {
+            "country": "USA"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 3,
+        "fields": {
+            "country": "Australia"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 4,
+        "fields": {
+            "country": "UK"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 5,
+        "fields": {
+            "country": "India"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 6,
+        "fields": {
+            "country": "Nigeria"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 7,
+        "fields": {
+            "country": "South Africa"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 8,
+        "fields": {
+            "country": "Spain"
+        }
+    },
+
+    {
+        "model": "payrollApp.Country",
+        "pk": 9,
+        "fields": {
+            "country": "Brazil"
+        }
+    }
+]

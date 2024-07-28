@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <script src="https://cdn.jsdeliver.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <h1>Charts</h1>
+    <form action="">
+        <label for="chartType">Select Chart Type:</label>
+        <select name="" id="chartType">
+            <option value="line">Line Chart</option>
+            <option value="bar">Bar Chart</option>
+            <option value="histogram">Histogram</option>
+            <option value="pie">Pie Chart</option>
+            <option value="area">Area Chart</option>
+            <option value="polar">Polar Area Chart</option>
+            <option value="doughnut">Doghnut Chart</option>
+            <option value="radar">Radar Chart</option>
+        </select>
+    </form>
+
+    <canvas id="chart" height="600", width="600"></canvas>
+
+    <script>
+        var ctx = document.getElementById('chart').getContext('2d');
+        var chartSelect = document.getElementById('chartType');
+        var chart;
+
+        chartSelect.addEventListnener('change', function() {
+            updateChart(chartSelect.value);
+        });
+
+        function updateChart(chartType) {
+            //Destroy the existing chart if exist
+            if (chart) {
+                chart.destroy();
+            }
+if (chartType=='polar' || chartType=='radar' || chartType=='doughnut' ||
+    chartType=='bar' || chartType=='line' || chartType=='histogram' || chartType=='pie')
+    {
+        fetch('/get_chart_data/'+chartType+'/')
+            .then(response => response.json())
+            .then(data => {
+                chart = new Chart(ctx, {
+                    type: {
+                        labels: data.labels,
+                        datasets: [{
+                            label: 'Sales Data',
+                            data: data.data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: false,
+                        maintainAspectRatio: false
+                    }
+                });
+            })
+    }
+        }
+        updateChart(chartSelect.value)
+    </script>
+
+</body>
+</html>

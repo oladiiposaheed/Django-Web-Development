@@ -1,0 +1,41 @@
+{% extends 'uploadfileApp/base.html' %}
+
+{% block content %}
+
+<h1>{{ employee.first_name }} {{ employee.last_name }}</h1>
+
+{% if employee.cv_file %}
+    <p><strong>CV:</strong> 
+        <a href="{{ employee.cv_file.url }}" download="{{ employee.cv_file.name }}">
+            {{ employee.cv_file.name }}
+        </a></p>
+{% else %}
+    <p><strong>CV:</strong> No CV availavle</p>
+{% endif %}
+
+
+{% if employee.photo_file %}
+    <p><strong>Photo:</strong>
+        <a href="{{ employee.photo_file.url }}" download="{{ employee.photo_file.name }}">
+            {{ employee.photo_file.name }}
+        </a>
+    </p>
+{% else %}
+    <p><strong>Photo:</strong> No photo availavle</p>
+{% endif %}
+
+
+<h3>Certificates</h3>
+<ul>
+    {% for certificate in certiticates %}
+        <li>
+            <a href="{{ certificate.certificate_file.url }}" 
+                download="{{  certificate.certificate_file.name }}">
+                {{ certificate.certitcate_file.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'employee_list' %}" class="btn btn-warning btn-sm">Back</a>
+{% endblock %}

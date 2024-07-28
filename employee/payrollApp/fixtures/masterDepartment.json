@@ -1,0 +1,136 @@
+[
+    {
+        "model": "payrollApp.Department",
+        "pk":1,
+        "fields": {
+            "dept": "HR",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":2,
+        "fields": {
+            "dept": "Finance",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 3,
+        "fields": {
+            "dept": "ICT",
+            "location": "East"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 4,
+        "fields": {
+            "dept": "HR",
+            "location": "North Central"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 5,
+        "fields": {
+            "dept": "Accounting",
+            "location": "South"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 6,
+        "fields": {
+            "dept": "Security",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 7,
+        "fields": {
+            "dept": "HR",
+            "location": "North"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 8,
+        "fields": {
+            "dept": "Admin",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk": 9,
+        "fields": {
+            "dept": "Finance",
+            "location": "South"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":10,
+        "fields": {
+            "dept": "HR",
+            "location": "North"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":11,
+        "fields": {
+            "dept": "Sales",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":12,
+        "fields": {
+            "dept": "Networking",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":13,
+        "fields": {
+            "dept": "Billing",
+            "location": "North"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":14,
+        "fields": {
+            "dept": "Sales",
+            "location": "West"
+        }
+    },
+
+    {
+        "model": "payrollApp.Department",
+        "pk":15,
+        "fields": {
+            "dept": "Strategic",
+            "location": "North"
+        }
+    }
+]

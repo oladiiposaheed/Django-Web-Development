@@ -1,0 +1,19 @@
+<table class="table">
+        <thead>
+            <tr>
+                <th>Category ID</th>
+                <th>Category Name</th>
+                <th>Category Decription</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for category in categories %}
+                <tr>
+                    <td>{{ category.categoryid }}</td>
+                    <td>{{ category.categoryname }}</td>
+                    <td>{{ category.description }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+</table>

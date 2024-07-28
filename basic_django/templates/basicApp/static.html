@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'basicApp/css' %}">
+    <script src="{% static 'basicApp/js' %}"></script>
+</head>
+<body>
+    <table class="table">
+        <caption>Welcome to Static class</caption>
+        <thead>
+            <tr>
+                <td><img src="{% static 'basicApp/images/img2.png' %}" alt="DS Image"></td>
+                <td><img src="{% static 'basicApp/images/img5.jpg' %}" alt="django Image"></td>
+
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
