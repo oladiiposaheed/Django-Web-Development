@@ -1,0 +1,16 @@
+{% extends 'authApp/base.html' %}
+
+{% block title %} Change Profile {% endblock %}
+
+{% block content %}
+
+    <h2>Change Profile</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary">
+                Change Profile
+            </button>
+        </form>
+
+{% endblock %}
